@@ -142,20 +142,19 @@ span {
 @media (min-width: 1001px){
     .main{
         padding: 35px;
-        width:1610px;
-        height: 100%;
+        width:100vw;
+        height: 730px   ;  
     }
     .t1 {
-        background-image: url(./assets/Background);
+        background-image: url(./assets/background);
         border-radius: 10px;
         display: none; 
-        animation: screen-fadeIn 5s linear infinite alternate;
     }
     .t2 {
         display: block;
-        background-image: url(./assets/Background);
+        background-image: url(./assets/background);
         border-radius: 10px;
-        height: 750px; 
+        height: 700px; 
     }
     .t2__elements {
         display: flex;
@@ -186,7 +185,7 @@ span {
     .t2__title {
         color: var(--white);
         padding-top: 30px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 40px;
     }
 
@@ -196,7 +195,7 @@ span {
     }
     .t2__subtitle {
         color: var(--white);
-        font-size: 4.3rem;
+        font-size: 3.3rem;
         padding-top: 30px;
         
     }
@@ -218,7 +217,8 @@ span {
     }
   
     .t2__animacao {
-       width: 500px; 
+       width: 400px;
+       padding-left: 70px; 
     }
     
     .t2__link {
