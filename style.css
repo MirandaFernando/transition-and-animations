@@ -52,13 +52,15 @@
     }
 }
 
-@keyframes t2-appear {
-    0% {
-        display: none;
+@keyframes top-down {
+    from {
+      transform: translateY(-40px);
+      opacity: 0;
     }
-
-    100% {
-        display: block;
+  
+    to {
+      top: translateY(0px);
+      opacity: 1;
     }
 }
 
@@ -142,30 +144,44 @@ span {
 @media (min-width: 1001px){
     .main{
         padding: 35px;
-        width:100vw;
-        height: 730px   ;  
+        width:1637px;
+        height: 755px;  
     }
     .t1 {
-        background-image: url(./assets/background);
+        background-image: url(./assets/background.jpg);
         border-radius: 10px;
-        display: none; 
+        display: none;
+
+        animation: top-down;
+        animation-duration: 2s;
     }
     .t2 {
         display: block;
-        background-image: url(./assets/background);
+        background-image: url(./assets/background.jpg);
         border-radius: 10px;
-        height: 700px; 
+        height: 750px;
+    }
+    .t2--hide {
+        display: none;
+    }
+    .t1--hide {
+        display: block;
     }
     .t2__elements {
         display: flex;
         animation: t2-appear 1s linear infinite alternate;
     }
+
     .t1__logo {
         width: 200px;
         display: block;
         margin-left: auto;
         margin-right: auto;
         padding-top: 30px;
+
+        animation: top-down;
+        animation-duration: 1s;
+
     }
     .t2__logo{
         width: 230px;
@@ -173,6 +189,9 @@ span {
         margin-left: auto;
         margin-right: auto;
         padding-top: 50px;
+
+        animation: top-down;
+        animation-duration: 1s;
     }
     .t2__text {
         margin-left: 100px;
@@ -181,29 +200,37 @@ span {
     .t1__title {
         font-size: 1.5rem;
         line-height: 25px;
+
     }
     .t2__title {
         color: var(--white);
         padding-top: 30px;
         font-size: 1.2rem;
         line-height: 40px;
+
+        animation: top-down;
+        animation-duration: 2s;
     }
 
     .t1__subtitle {
         font-size: 3.0rem;
-        padding-bottom: 30px
+        padding-bottom: 30px;
+
     }
     .t2__subtitle {
         color: var(--white);
         font-size: 3.3rem;
         padding-top: 30px;
-        
+
+        animation: top-down;
+        animation-duration: 2s;
     }
     .t1__video {
         width: 544px;
         height: 310px;
         margin-left: auto;
         margin-right: auto;
+
     }
 
     .t1__link {
@@ -214,11 +241,13 @@ span {
     .t1__button {
         margin-top: 15px;
         margin-bottom: 60px;
+
     }
   
     .t2__animacao {
        width: 400px;
-       padding-left: 70px; 
+       padding-left: 70px;
+       
     }
     
     .t2__link {
