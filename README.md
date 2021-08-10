@@ -9,10 +9,10 @@ project created to train creating animations and transitions
 
 To start the project, just open the file `index.html` in your preferred browser.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/MirandaFernando/transition-and-animations/blob/master/assets/tela%202.PNG)
 
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/MirandaFernando/transition-and-animations/blob/master/assets/tela%201.PNG)
 
 ---
 ## View Project
