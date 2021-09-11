@@ -28,7 +28,7 @@
     }
     100% {
         opacity: 0;
-        transform: scale(2.3);
+        transform: scale(2.0);
     }
 }
 
@@ -110,7 +110,9 @@ span {
 .t1__video {
     width: 350px;
     height: 200px;
-    margin: 0 10px 30px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     border-radius: 10px;
 }
 .t1__link {
@@ -144,11 +146,13 @@ span {
 @media (min-width: 1001px){
     .main{
         padding: 35px;
-        width:1637px;
-        height: 755px;  
+        width: 100vw;
+        height: 100vh;  
     }
     .t1 {
         background-image: url(./assets/background.jpg);
+        height: 100%;
+        width: 100%;
         border-radius: 10px;
         display: none;
 
@@ -158,6 +162,8 @@ span {
     .t2 {
         display: block;
         background-image: url(./assets/background.jpg);
+        height: 90%!important;
+        width: 95%;
         border-radius: 10px;
         height: 750px;
     }
@@ -198,14 +204,14 @@ span {
         margin-top: 20px;
     }
     .t1__title {
-        font-size: 1.5rem;
+        font-size: 1.0rem;
         line-height: 25px;
 
     }
     .t2__title {
         color: var(--white);
         padding-top: 30px;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         line-height: 40px;
 
         animation: top-down;
@@ -213,41 +219,34 @@ span {
     }
 
     .t1__subtitle {
-        font-size: 3.0rem;
+        font-size: 2.5rem;
         padding-bottom: 30px;
 
     }
     .t2__subtitle {
         color: var(--white);
-        font-size: 3.3rem;
+        font-size: 3.0rem;
         padding-top: 30px;
 
         animation: top-down;
         animation-duration: 2s;
     }
     .t1__video {
-        width: 544px;
-        height: 310px;
+        width: 504px;
+        height: 290px;
         margin-left: auto;
         margin-right: auto;
 
     }
 
     .t1__link {
-        width: 544px;
-        height: 310px;
-    }
-
-    .t1__button {
-        margin-top: 15px;
-        margin-bottom: 60px;
-
+        width: 504px;
+        height: 290px;
     }
   
     .t2__animacao {
-       width: 400px;
+       width: 300px;
        padding-left: 70px;
-       
     }
     
     .t2__link {
@@ -259,9 +258,9 @@ span {
     .t2__link::before {
         content: '';
         position: absolute;
-        height: 255px;
-        width: 255px;
-        top: 284px;
+        height: 200px;
+        width: 200px;
+        top: 310px;
         transform: scale(1);
         opacity: 0.5;
         border: 0.2px solid var(--tulip-tree);
@@ -272,9 +271,9 @@ span {
     .t2__link::after {
         content: '';
         position: absolute;
-        height: 255px;
-        width: 255px;
-        top: 284px;
+        height: 200px;
+        width: 200px;
+        top: 310px;
         border: 0.2px solid var(--tulip-tree);
         border-radius: 50%;
         animation: button-waves 3s linear infinite;
@@ -302,4 +301,5 @@ span {
         top: 360px;
         animation: button-scale 1s linear infinite alternate;
     }
+    
 }
